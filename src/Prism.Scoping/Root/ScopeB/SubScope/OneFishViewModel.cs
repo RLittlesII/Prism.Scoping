@@ -1,6 +1,6 @@
 namespace Prism.Scoping.Root.ScopeB.SubScope;
 
-public class ScopeBOneViewModel
+public class OneFishViewModel
 {
     
 }

@@ -1,6 +1,6 @@
 namespace Prism.Scoping.Abstractions;
 
-public class IScopedInterface
+public interface IScopedInterface
 {
     
 }
