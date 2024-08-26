@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Prism.Scoping.Platforms.iOS;
+namespace Prism.Scoping;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

@@ -61,8 +61,95 @@
     </ItemGroup>
 
     <ItemGroup>
-      <AdditionalFiles Include="Root\ScopeA\RootScopeA.xaml" />
-      <AdditionalFiles Include="Root\ScopeB\RootScopeB.xaml" />
+      <AdditionalFiles Include="Features\ScopeA\RootScopeA.xaml" />
+      <AdditionalFiles Include="Features\ScopeB\RootScopeB.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="Root\Leaf\RootLeaf.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\FirstSibling\Subscope\BlueFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\FirstSibling\Subscope\BlackFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\FirstSibling\BlackFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\FirstSibling\BlueFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\FirstSibling\SubScope\LittleStarFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\SecondSibling\SubScope\LittleCarFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\SecondSibling\OldFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\Root\SecondSibling\NewFish.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\RootNavigation.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="Features\ScopeC\SubScopeC.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Root\Leaf\RootLeaf.xaml.cs">
+        <DependentUpon>RootLeaf.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\FirstSibling\Subscope\BlueFish.xaml.cs">
+        <DependentUpon>BlueFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\FirstSibling\Subscope\BlackFish.xaml.cs">
+        <DependentUpon>RedFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\FirstSibling\BlackFish.xaml.cs">
+        <DependentUpon>BlackFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\FirstSibling\BlueFish.xaml.cs">
+        <DependentUpon>BlueFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\FirstSibling\SubScope\LittleStarFish.xaml.cs">
+        <DependentUpon>BlackFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\SecondSibling\SubScope\LittleCarFish.xaml.cs">
+        <DependentUpon>LittleStarFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\SecondSibling\SubScope\LittleStarFish.xaml.cs">
+        <DependentUpon>LittleStarFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\SecondSibling\OldFish.xaml.cs">
+        <DependentUpon>BlackFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\Root\SecondSibling\NewFish.xaml.cs">
+        <DependentUpon>BlueFish.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\RootNavigation.xaml.cs">
+        <DependentUpon>RootNavigation.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Features\ScopeC\SubScopeC.xaml.cs">
+        <DependentUpon>RootScopeB.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

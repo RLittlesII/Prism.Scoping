@@ -1,6 +1,3 @@
 namespace Prism.Scoping.Abstractions;
 
-public interface ISingletonInterface
-{
-    
-}
+public interface ISingletonInterface;

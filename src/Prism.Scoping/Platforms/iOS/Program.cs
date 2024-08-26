@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace Prism.Scoping.Platforms.iOS;
+namespace Prism.Scoping;
 
 public class Program
 {

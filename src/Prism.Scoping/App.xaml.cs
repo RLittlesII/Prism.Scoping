@@ -1,6 +1,6 @@
 ﻿namespace Prism.Scoping;
 
-public partial class App : Application
+public partial class App
 {
     public App() => InitializeComponent();
 }

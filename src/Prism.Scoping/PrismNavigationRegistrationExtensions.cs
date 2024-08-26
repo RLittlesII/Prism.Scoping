@@ -1,4 +1,4 @@
-using Prism.Scoping.Root;
+using Prism.Scoping.Core;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Prism.Scoping;
